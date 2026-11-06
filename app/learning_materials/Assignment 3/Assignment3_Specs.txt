@@ -1,0 +1,6 @@
+Overview
+This assignment builds upon Assignment 1: Basic Nutrition App and extends the core functionality to create a more powerful and feature-rich digital nutrition application. You will implement advanced features such as data persistence, user authentication, real-time data integration, and enhanced user experience elements. By the end of this assignment, your app should be able to provide users with a personalized and interactive nutrition insights experience.
+
+Read the Assignment Theme and Description from A1: Basic App: 
+
+

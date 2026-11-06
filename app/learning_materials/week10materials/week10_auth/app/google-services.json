@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "944555265112",
+    "project_id": "week10-d037c",
+    "storage_bucket": "week10-d037c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944555265112:android:28bba012ce4243801a8e2d",
+        "android_client_info": {
+          "package_name": "com.fit2081.week10_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjzn4RQg-GbKQN0DPWkXFCjjrJz8cJxec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944555265112:android:aec24ae0848516731a8e2d",
+        "android_client_info": {
+          "package_name": "com.fit2081.week10_google_authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjzn4RQg-GbKQN0DPWkXFCjjrJz8cJxec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944555265112:android:6585fed80c15b7191a8e2d",
+        "android_client_info": {
+          "package_name": "com.fit2081.week_10_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjzn4RQg-GbKQN0DPWkXFCjjrJz8cJxec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

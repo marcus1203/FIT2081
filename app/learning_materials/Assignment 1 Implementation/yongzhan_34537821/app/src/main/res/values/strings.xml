@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">yongzhan_34537821</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_food_intake_questionnaire">FoodIntakeQuestionnaire</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_insights_screen">InsightsScreen</string>
+    <string name="title_activity_csv_reader">CsvReaderActivity</string>
+</resources>

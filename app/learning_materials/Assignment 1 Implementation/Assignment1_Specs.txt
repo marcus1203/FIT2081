@@ -1,0 +1,283 @@
+1. Assessment Theme: Digital Nutrition
+The Digital Nutrition Journey: Food Quality Score Visualisation Application
+Introduction
+Digital health technologies have transformed how we monitor, assess, and improve our health outcomes. Within this domain, nutrition applications represent a significant advancement in helping individuals understand and enhance their dietary patterns. This article provides an in-depth explanation of a specialised nutrition application focused on food quality score visualisation—specifically designed for patients who have already undergone professional dietary assessment.
+
+Take a look at this official guide from Australian Government's Department of Health and Ageing: 
+
+
+Unlike general consumer applications such as MyFitnessPal that primarily focus on calorie counting and macronutrient tracking, this application (that we will build as part of this assignment) serves as an extension of clinical care. It bridges the gap between professional dietary assessment and the daily nutritional choices patients make in their lives, providing them with personalised insights based on scientifically validated dietary quality metrics. In the next section, we'll unpack more about dietary assessments.
+
+Understanding Dietary Assessment and Food Recalls
+Before exploring the application's functionality, it is important to understand the clinical process that precedes its use. When patients visit a dietitian or nutritionist, one of the primary assessment methods used is a food recall survey. This procedure involves the healthcare professional conducting a structured interview where patients describe in detail everything they have eaten and drunk over a specified period—typically the previous 24 hours.
+
+During this recall process, the clinician records not only what foods were consumed but also details including:
+
+Portion sizes and quantities
+
+Methods of preparation
+
+Timing of consumption
+
+Contextual factors such as where and with whom the meal was eaten
+
+This detailed information provides clinicians with comprehensive data about a patient's dietary patterns, nutrient intake, and overall eating behaviours. The clinician then analyses this information using standardised tools that generate various nutritional assessments, including a food quality score based on established dietary guidelines.
+
+The Healthy Eating Index for Australian Adults (HEIFA-2013) represents one such scoring system, evaluating the degree to which an individual's diet aligns with the Australian Dietary Guidelines. This multidimensional assessment examines consumption patterns across various food groups including vegetables, fruits, whole grains, protein sources, dairy products, and discretionary foods, while also considering factors such as sodium, sugar, and alcohol intake.
+
+In Brief
+As part of this unit's major assessment (60% spread over A1 & A3) you will build a digital nutrition app called NutriTrack that helps patients visualise their food quality scores after they have visited a clinician/dietician and conducted a food recall survey.
+
+The Food Quality Score Visualisation Application represents an important advancement in nutrition technology that bridges clinical assessment and everyday dietary choices. By helping patients understand their personalised dietary quality scores through intuitive visualisations and providing actionable, evidence-based recommendations, the application empowers individuals to make informed nutritional decisions.
+
+For IT students developing this application, the project offers rich learning opportunities across technical, design, and health domains. Most importantly, it provides experience creating technology that has tangible impacts on health outcomes—turning abstract nutritional guidance into practical, personalised support that helps individuals navigate their nutritional journey with confidence and clarity.
+
+By focusing on visualisation, education, and behavioural support rather than simply tracking calories or macronutrients, this application exemplifies how thoughtfully designed technology can extend and enhance the impact of clinical care, ultimately supporting better nutritional choices and improved health outcomes.
+
+Credit
+This assessment spec was designed by Delvin Varghese in association with Associate Professor Tracy McCaffrey (Department of Nutrition, Dietetics and Food at Monash University). The spec is based on a current real-world problem faced in the field of Nutrition Studies.
+
+2. The Problem in Digital Nutrition
+The Role of the Food Quality Score Visualisation Application
+After patients have completed their clinical assessment, they often leave with a wealth of information but may struggle to contextualise this information or translate it into actionable changes. This is where our specialised application provides significant value.
+
+The application allows patients to claim their profile using their unique identifier provided by their healthcare professional. Upon accessing their account, patients can view a comprehensive visualisation of their food quality scores derived from their recall survey data. Rather than presenting this information as complex numerical data, the application translates these scores into intuitive visual representations that clearly communicate dietary strengths and areas for improvement.
+
+The core purpose of this application extends beyond mere data presentation. It serves as a personalised nutrition companion that provides:
+
+Contextualised Interpretation: Helping patients understand what their scores mean in relation to dietary guidelines and health outcomes.
+
+Targeted Recommendations: Suggesting specific, actionable changes based on identified areas for improvement within their dietary pattern.
+
+Motivational Support: Delivering positive reinforcement for healthy choices while providing encouraging messages to support dietary changes.
+
+Educational Content: Offering evidence-based information about nutrition principles in accessible language.
+
+Goal-Setting Framework: Enabling patients to set realistic, incremental goals for dietary improvement.
+
+3. How Mobile Apps can help!
+Technical Foundation and User Experience
+From a technical perspective, the application integrates with clinical systems to securely access patient data. The scores generated from the food recall survey are stored in a structured format (typically CSV files) that the application can interpret and transform into visual representations.
+
+The user experience is designed to be intuitive and accessible, even for individuals with limited technological proficiency. After completing a simple authentication process to claim their profile, patients navigate through a series of screens that progressively reveal different aspects of their dietary assessment:
+
+Overview Dashboard: Presents a comprehensive summary of their overall food quality score and key metrics.
+
+Detailed Breakdown: Shows performance across individual dietary components (vegetable intake, fruit consumption, whole grain choices, etc.).
+
+Comparative Analysis: Places their scores in context by comparing them to reference values from dietary guidelines.
+
+Recommendation Centre: Provides personalised suggestions for dietary improvements based on their specific scores.
+
+Resource Library: Offers educational materials including recipe ideas, meal planning tips, and nutritional information.
+
+The application employs data visualisation techniques specifically designed to communicate nutritional concepts clearly, using colour coding, intuitive icons, and progressive disclosure of information to prevent overwhelming users.
+
+Behavioural Science Foundation
+The application is built upon established principles of behaviour change theory, recognising that knowledge alone is rarely sufficient to drive sustainable dietary improvements. It incorporates elements such as:
+
+Self-Monitoring: Enabling patients to track their progress over time.
+
+Goal Setting: Facilitating the establishment of specific, measurable, achievable, relevant, and time-bound (SMART) nutritional goals.
+
+Positive Reinforcement: Celebrating achievements and improvements, no matter how small.
+
+Implementation Intentions: Helping patients plan specific actions for overcoming barriers to dietary change.
+
+Social Support: Providing options to share progress with healthcare providers or support networks.
+
+The integration of these behavioural techniques transforms the application from a simple data visualisation tool into a comprehensive dietary support system.
+
+4. Android Skills you will learn 🎖️
+User Interface (UI) & Form Elements
+Layout and Arrangement: Understanding Jetpack Compose UI components, using Column, Row, and Box for structuring screens.
+
+Interactive UI Elements:
+
+Buttons: Handling click events and user interactions.
+
+Checkboxes: Managing selection states and integrating UI state changes.
+
+DatePicker: Allowing users to select dates effectively.
+
+ProgressBar: Displaying progress updates dynamically.
+
+Form Validation: Implementing input validation for text fields and other UI components.
+
+Working with Data (CSV Handling)
+Reading CSV Files: Learning how to parse and read structured data from CSV files.
+
+Basic Computation & Scoring: Performing calculations based on user input, such as computing a nutrition score.
+
+Navigation Between Screens
+Multi-Screen Navigation: Implementing Compose Navigation with multiple screens.
+
+Passing Data Between Screens: Learning how to use NavArguments for transferring data.
+
+Using ImageView
+Displaying Images: Using Image() composable to show static and dynamic images.
+
+Modals & Dialogs
+Creating Pop-ups: Displaying modals/dialogs for additional information or user prompts.
+
+Adding & Dismissing Text: Managing user interactions in modals.
+
+Persistent Storage with Shared Preferences
+Using SharedPreferences (DataStore alternative): Storing simple key-value data like user preferences and scores for persistent state management.
+
+5a. App Specifications
+Here's a formal specification document for students to build the NutriTrack app. This document outlines the required screens, navigation, validation, and CSV integration.
+
+See "10. Expected Output" for a visual demonstration of what you should build.
+
+NutriTrack - Student Implementation Specification
+Version: 1.0
+Prepared for: FIT2081 - Mobile App Development
+Date: March 2025
+
+1. Overview
+NutriTrack is a mobile application designed to help users track their food intake and receive insights into their dietary habits. The goal of this assignment is for students to implement the core functionalities of the app using Kotlin and Jetpack Compose.
+
+This specification outlines the required screens, navigation structure, data handling, and validation rules. Students must extract user data from a pre-provided CSV file that contains patient IDs and food quality scores.
+
+2. App Structure & Navigation
+Naming: Package name MUST include student’s firstname and student ID.
+
+Students must implement a basic navigation system with two primary screens:
+
+Home (Displays food quality score and allows edits)
+
+Insights (Displays detailed food score breakdown)
+
+3. Screens & Functionality
+3.1. Welcome Screen (Landing Page)
+Purpose: Introduces the app and provides a disclaimer.
+
+Elements:
+
+App logo and name ("NutriTrack")
+
+Disclaimer text
+
+External link to Monash Nutrition Clinic
+
+Login button → Navigates to the login screen
+
+TextView with Student Name + ID to distinguish your app. Write this in the format: “Alex Scott (14578373)”. This can be placed anywhere on your Welcome Screen. Optional to display this on other pages.
+
+3.2. Login Screen
+Purpose: Allows users to authenticate using a pre-registered ID and phone number.
+
+Elements:
+
+Dropdown: User ID (loaded from CSV file)
+
+Text field: Phone number (must match the one in the CSV)
+
+Continue button → Proceeds to the questionnaire if validation is successful
+
+Validation Rules:
+
+User ID must exist in the CSV file
+
+Phone number must match the registered number in the CSV
+
+If invalid, display an error message
+
+3.3. Food Intake Questionnaire
+Purpose: Captures dietary preferences and meal timing data.
+
+Elements:
+
+Checkboxes: Select food categories (Fruits, Vegetables, Grains, etc.)
+
+Persona Selection (Buttons for six categories)
+
+Dropdown: Select best-fitting persona
+
+Time pickers:
+
+What time do you eat your biggest meal?
+
+What time do you go to sleep?
+
+What time do you wake up?
+
+Save button → Stores data locally in SharedPreferences.
+
+3.4. Home Screen (Food Quality Score)
+Purpose: Displays the user's food quality score.
+
+Elements:
+
+Greeting: "Hello, [User's Name]"
+
+Edit button → Navigates back to the questionnaire
+
+Food Score Display (Loaded from the CSV)
+
+Explanation text: What the Food Quality Score represents
+
+Navigation options (Bottom bar or buttons)
+
+3.5. Insights Screen (Detailed Breakdown)
+Purpose: Displays a category-wise breakdown of the user’s food score.
+
+Elements:
+
+Progress bars for:
+
+Vegetables, Fruits, Grains & Cereals, Whole Grains, Meat, Dairy, etc.
+
+Total Score Calculation (Loaded from CSV)
+
+Buttons:
+
+"Share with someone"
+
+"Improve my diet" → Currently it doesn't need to do anything but in our future assignment, this will navigate to NutriCoach screen.
+
+4. Data Handling & CSV Integration
+Students must extract and use data from a CSV file.
+
+When logging in, the app must check User ID and Phone Number from the CSV.
+
+After login, the Food Quality Score is retrieved and displayed on the Home and Insights screens.
+
+Validation Tip: Ensure that invalid user entries return an error message before allowing access.
+
+5. Requirements & Assessment Criteria
+5.1. Core Requirements (Must-Have)
+✅ Implement all five screens (Welcome, Login, Questionnaire, Home, Insights)
+✅ Read and validate User ID & Phone Number from CSV
+✅ Display Food Quality Score from CSV
+✅ Implement basic navigation (either bottom bar or buttons)
+
+5.2. What is NOT Required (Future Work in Assignment 3)
+❌ "Settings" screen
+❌ "NutriCoach" - Advanced AI-based recommendations for patients
+
+
+Sample CSV File Structure
+Create a .CSV file with the following contents and use this in your emulator/device for testing purposes.
+
+Hint: use Device Explorer in Android Studio to create/open files in Emulator from within Android Studio. You can use this to create or transfer the CSV file to your device.
+
+PhoneNumber,User_ID,Sex,HEIFAtotalscoreMale,HEIFAtotalscoreFemale,DiscretionaryHEIFAscoreMale,DiscretionaryHEIFAscoreFemale,Discretionaryservesize,VegetablesHEIFAscoreMale,VegetablesHEIFAscoreFemale,Vegetableswithlegumesallocatedservesize,LegumesallocatedVegetables,Vegetablesvariationsscore,VegetablesCruciferous,VegetablesTuberandbulb,VegetablesOther,Legumes,VegetablesGreen,VegetablesRedandorange,FruitHEIFAscoreMale,FruitHEIFAscoreFemale,Fruitservesize,Fruitvariationsscore,FruitPome,FruitTropicalandsubtropical,FruitBerry,FruitStone,FruitCitrus,FruitOther,GrainsandcerealsHEIFAscoreMale,GrainsandcerealsHEIFAscoreFemale,Grainsandcerealsservesize,GrainsandcerealsNonwholegrains,WholegrainsHEIFAscoreMale,WholegrainsHEIFAscoreFemale,Wholegrainsservesize,MeatandalternativesHEIFAscoreMale,MeatandalternativesHEIFAscoreFemale,Meatandalternativeswithlegumesallocatedservesize,LegumesallocatedMeatandalternatives,DairyandalternativesHEIFAscoreMale,DairyandalternativesHEIFAscoreFemale,Dairyandalternativesservesize,SodiumHEIFAscoreMale,SodiumHEIFAscoreFemale,Sodiummgmilligrams,AlcoholHEIFAscoreMale,AlcoholHEIFAscoreFemale,Alcoholstandarddrinks,WaterHEIFAscoreMale,WaterHEIFAscoreFemale,Water,WaterTotalmL,BeverageTotalmL,SugarHEIFAscoreMale,SugarHEIFAscoreFemale,Sugar,SaturatedFatHEIFAscoreMale,SaturatedFatHEIFAscoreFemale,SaturatedFat,UnsaturatedFatHEIFAscoreMale,UnsaturatedFatHEIFAscoreFemale,UnsaturatedFatservesize
+61436567331,4,Male,41.67,46.17,10,10,1.88,0.5,0.5,0.04,0,0,0,0,0,0,0.04,0,0,0,0,0,0,0,0,0,0,0,1.67,1.67,2.97,2.97,0,0,0,2,4,1.17,0,0,0,0,5,5,2081.75,5,5,0,0,0,48.57,326.8,672.8,10,10,4.82,5,5,8.49,2.5,5,2.17
+61436567331,1,Female,42.84,43.84,10,10,0.45,1,1,1.19,0,0,0,0.83,0,0,0,0.36,0,0,0,0,0,0,0,0,0,0,0.84,0.84,1.36,1.36,0,0,0,1,2,0.85,0,0,0,0,10,10,67.1,5,5,0,0,0,100,488.5,488.5,10,10,8.24,5,5,9.74,0,0,0.33
+61436567331,2,Female,45.09,47.34,5,5,4.11,0.5,0.5,0.29,0,0,0,0.1,0,0,0.18,0.01,7.5,7.5,1.26,5,0,1.04,0,0.22,0,0,3.34,3.34,4.22,4.22,0,0,0,1,2,0.9,0,4,4,1.36,5,5,1965.42,5,5,0,0,0,75.58,143.7,190.14,10,10,13.86,2.5,2.5,10.44,1.25,2.5,1.41
+61436567331,5,Male,42.5,45.5,5,5,4.42,3,4,3.18,0.37,1,0.6,1.2,0.52,0.37,0.13,0.35,0,0,0.01,0,0,0,0,0,0.01,0,2.5,2.5,3.81,3.81,0,0,0,8,10,2.89,0,4,4,1.41,0,0,2763.64,5,5,0,0,0,64.86,500.28,771.35,10,10,1.71,0,0,14.46,5,5,5.63
+61436567331,6,Female,44.25,47.5,10,10,0.93,0.5,0.5,0.27,0,0,0.1,0.03,0,0,0.14,0,0,0,0,0,0,0,0,0,0,0,2.5,2.5,3.89,3.89,0,0,0,4,6,1.93,0,1,1,0.14,5,5,1633.5,5,5,0,0,0,67.95,553.6,814.76,10,10,10.75,5,5,4.94,1.25,2.5,1.36
+61436567331,17,Male,52.17,53.42,10,10,1.91,0,0,0,0,0,0,0,0,0,0,0,1.25,1.25,0.95,0,0.95,0,0,0,0,0,1.67,1.67,2.65,1.59,1,1,1.06,10,10,4.53,0,2,2,0.96,10,10,441,5,5,0,0,0,13.95,107,767.12,5,5,16.46,5,5,9.78,1.25,2.5,1.42
+61436567331,24,Female,54.75,59.25,10,10,0.69,1,1,1.84,0,0,0,0.63,0.36,0,0.03,0.83,1.25,1.25,0.94,0,0.94,0,0,0,0,0,2.5,2.5,3.75,3.75,0,0,0,6,8,2.08,0,4,4,1.09,10,10,1454.44,5,5,0,0,0,100,373.98,373.98,10,10,0.19,2.5,2.5,10.96,2.5,5,2.34
+61436567331,26,Male,38,42.5,2.5,2.5,5.06,1,1,1.26,0,0,0,0,0,0,0.42,0.84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,8,2.09,0,6,6,1.9,5,5,2228.56,5,5,0,0,0,0,0,0,10,10,11.91,0,0,18.74,2.5,5,2.58
+61433327331,42,Female,51.75,54,10,10,2.25,4,5,3,1.2,2,0,0,0,1.2,0.6,1.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,3.36,0,4,4,1.43,5,5,1966.06,5,5,0,0,0,73.92,488.5,660.85,10,10,0.38,0,0,18.92,3.75,5,3.13
+Important Notes: The CSV has scoring for both Male and Female participants. Depending on the Sex of the User, score accordingly i.e. for Female users, only look at HEIFAtotalscoreFemale and other scores that end in Female.
+
+Persona Images
+These are the images to display on the Persona screens for each of the 6 personas on their respective Modal.
+
+File
+Persona_Images.zip
+Credit: designed using DALL-E

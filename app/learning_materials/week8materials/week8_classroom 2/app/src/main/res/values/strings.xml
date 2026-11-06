@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">week8_classroom</string>
+    <string name="title_activity_students_dashboard">StudentsDashboard</string>
+    <string name="title_activity_teacher_dashboard">TeacherDashboard</string>
+</resources>
